@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Main page of the website. We can either do PHP files with HTML written in them
+or separate HTML and PHP files. Honestly, separate is better and PHP files can't
+be run on a normal Windows setup while HTML files can.
+
+Another important aspect is the Javascript that
+make webpages "pop". These can be put in the <head> tags if we want or have
+separate files, but we'll do separate files for these
+
+PHP functions - http://www.w3schools.com/php/default.asp
+HTML tutorial - http://www.w3schools.com/html/default.asp
+Javascript tutorial - http://www.w3schools.com/js/default.asp
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>siteName</title>
+	<!--This links to the external style sheet-->
+	<link rel='stylesheet' href='frontend.css'> 
+    </head>
+    <body>
+	<h1>siteName Books</h1>
+	<h3>Welcome to the basic siteName Author Site!</h3>
+	<a href='frontend/login.php'>Login</a>&nbsp;|&nbsp;<a href='frontend/register.php'>Register</a>
+	<!--<form action='./ajax/actions.php' method="POST">
+	    <div>This is a generic form! <br>
+		Type some words!<br></div>
+	    <input type='text' name='words' class='infield'><span id='words'></span><br>
+	    <input type='submit' value='Submit'>
+	    <div><?php if(isset($variable)) {echo $variable;}?></div>
+	</form>-->
+    </body>
+</html>
