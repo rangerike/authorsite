@@ -5,3 +5,8 @@
      */
     
     include 'functions.php';
+    
+    $DBUSER = 'Remote';
+    $DBPASS = 'siteremote';
+    $DBSERVER = 'localhost';
+    $_SESSION['connection'] = mysqli_connect($DBSERVER, $DBUSER, $DBPASS);

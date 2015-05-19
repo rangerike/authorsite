@@ -4,7 +4,13 @@ if (isset($_POST['username']) && isset($_POST['password1'])
 	&& isset($_POST['password2']) && $_POST['password1'] == $_POST['password2']
 	&& passwordVerify($password1, $username))
 {
-    //TODO mysql here
+    $query = 'INSERT INTO 
+	      name.users  
+	      (Username, Password) 
+	      VALUES 
+	      ("'.mysqli_real_escape_string($_POST['username']).'",'
+	       .mysqli_real_escape_string(password_hash($_POST['password1'], PASSWORD_BCRYPT)).'"';
+    $result = mysqli_query($_SESSION['connection'], $query);
 }
 ?>
 <!DOCTYPE html>
